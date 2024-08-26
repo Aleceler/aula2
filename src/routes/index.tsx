@@ -1,4 +1,3 @@
-import React from "react"
 import {createBrowserRouter, Navigate} from 'react-router-dom';
 import Home from "../views/Home";
 import About from "../views/About";
@@ -18,7 +17,7 @@ const RoutesConfig =  createBrowserRouter([
                     path: "careers",
                     element: <Careers />,
                 },
-                ]
+                ],
         },
         {
             path: "/product/:id",

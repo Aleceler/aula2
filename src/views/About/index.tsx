@@ -1,9 +1,11 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom';
+import {Outlet, useLocation} from 'react-router-dom';
 
 const About = () => {
+    const location = useLocation()
+    const isChildRoute = location.pathname === '/about';
+
     return <>
-        <h1>About</h1>
+        {isChildRoute && <h1>About</h1>}
         <Outlet />
     </>
 }
